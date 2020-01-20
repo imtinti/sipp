@@ -985,6 +985,9 @@ void sipp_exit(int rc)
         already_exited = 1;
     }
 
+    quitting = 1;      //alterações IURI TINTI
+    abort_all_tasks(); //alterações IURI TINTI
+
     screen_exit();
     print_last_stats();
     screen_show_errors();
